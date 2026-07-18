@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #1a1a1a;
+    --paper: #f5f0e8;
+    --accent: #c23a22;
+    --muted: #8a8578;
+    --border: #d4cfc4;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: var(--paper);
+  }
+
+  /* Scrollbar — subtle, paper-toned */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--paper); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+}
+
+@layer components {
+  /* Ink-bar accent: the signature vertical stroke */
+  .ink-bar {
+    @apply border-l-4 border-accent pl-5;
+  }
+
+  /* Article entrance animation */
+  .article-enter {
+    animation: fadeUp 0.5s ease-out both;
+  }
+
+  /* Stagger children */
+  .stagger > * {
+    animation: fadeUp 0.4s ease-out both;
+  }
+  .stagger > *:nth-child(1) { animation-delay: 0s; }
+  .stagger > *:nth-child(2) { animation-delay: 0.06s; }
+  .stagger > *:nth-child(3) { animation-delay: 0.12s; }
+  .stagger > *:nth-child(4) { animation-delay: 0.18s; }
+  .stagger > *:nth-child(5) { animation-delay: 0.24s; }
+  .stagger > *:nth-child(6) { animation-delay: 0.30s; }
+  .stagger > *:nth-child(n+7) { animation-delay: 0.36s; }
+
+  /* Markdown rendered content */
+  .prose-ink {
+    @apply font-body text-ink leading-relaxed text-lg;
+  }
+  .prose-ink h1, .prose-ink h2, .prose-ink h3 {
+    @apply font-display font-bold mt-10 mb-4;
+  }
+  .prose-ink h1 { @apply text-4xl; }
+  .prose-ink h2 { @apply text-3xl; }
+  .prose-ink h3 { @apply text-2xl; }
+  .prose-ink p { @apply mb-5; }
+  .prose-ink a { @apply text-accent underline underline-offset-2 hover:decoration-2 transition-all; }
+  .prose-ink blockquote {
+    @apply ink-bar my-8 text-muted italic text-xl;
+  }
+  .prose-ink code {
+    @apply bg-border/40 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  .prose-ink pre {
+    @apply bg-ink text-paper rounded-lg p-6 overflow-x-auto my-6 text-sm;
+  }
+  .prose-ink pre code {
+    @apply bg-transparent p-0 text-paper;
+  }
+  .prose-ink img {
+    @apply rounded my-8 max-w-full;
+  }
+  .prose-ink ul, .prose-ink ol {
+    @apply pl-6 mb-5;
+  }
+  .prose-ink li {
+    @apply mb-2;
+  }
+  .prose-ink hr {
+    @apply border-border my-10;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
