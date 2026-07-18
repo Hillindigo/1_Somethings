@@ -1,0 +1,1 @@
+import{v as r}from"./index.b57f2f57.js";function e(n){return r.get("/api/banner",{params:n})}function t(n){return n.id?r.put("/api/banner/"+n.id.toString(),n):r.post("/api/banner",n)}export{t as a,e as b};

@@ -1,0 +1,134 @@
+system:
+  ip: ""
+  port: 8080
+  gin_mode: debug
+  env: dev
+log:
+  app: blogx_server
+  dir: logs
+db:
+- user: root
+  password: "123456"
+  host: 192.168.80.3
+  port: 3306
+  db: blogx
+  debug: false
+  source: mysql
+jwt:
+  expire: 240
+  secret: xxx
+  issuer: fengfeng
+redis:
+  addr: 192.168.80.3:6379
+  password: ""
+  db: 2
+site:
+  siteInfo:
+    title: ""
+    enTitle: ""
+    slogan: ""
+    logo: ""
+    beian: ""
+    mode: 1
+  project:
+    title: ""
+    icon: ""
+    webPath: ""
+  seo:
+    keywords: ""
+    description: ""
+  about:
+    siteDate: "2024-09-18"
+    qq: https://www.fengfengzhidao.com/uploads/file/%E6%9E%AB%E6%9E%AB/qq_20231015141644.png
+    wechat: https://image.fengfengzhidao.com/rj_0731/10ca538e2acd66bc81e5f777f256372.jpg
+    gitee: https://gitee.com/fengfengzhidao
+    bilibili: https://space.bilibili.com/359151217
+    github: https://github.com/fengfengzhidao/
+  login:
+    qqLogin: false
+    usernamePwdLogin: true
+    emailLogin: false
+    captcha: false
+  indexRight:
+    list:
+    - title: 独家推广
+      enable: true
+    - title: 用户反馈
+      enable: false
+    - title: 标签云
+      enable: true
+    - title: 文章推荐
+      enable: true
+    - title: 关于我们
+      enable: true
+    - title: 作者推荐
+      enable: true
+  article:
+    noExamine: true
+    commentLine: 4
+email:
+  domain: smtp.qq.com
+  port: 587
+  sendEmail: 2974771769@qq.com
+  authCode: ""
+  sendNickname: 枫枫知道
+  ssl: true
+  tls: false
+qq:
+  appID: "747573454"
+  appKey: ""
+  redirect: http://xxxxx
+qiNiu:
+  enable: false
+  accessKey: UMM-dgbL9Wf-FdRIf-OvkIakNfVCoAXUELkVUXpo
+  secretKey: ""
+  bucket: fengfengzhidao
+  uri: https://image.fengfengzhidao.com
+  region: z2
+  prefix: blogx
+  size: 3
+  expiry: 60
+ai:
+  enable: false
+  secretKey: njdfnhj6344t45347gsdhgsdh
+  nickname: 小枫
+  avatar: /xxx/xxx
+  abstract: Hello，我是你的AI小管家,你可以叫我小枫,我可以根据你的描述在全站文章中去找到你所喜欢的文章,赶紧来试试吧！
+upload:
+  size: 3
+  whiteList:
+  - jpg
+  - jpeg
+  - png
+  - webp
+  - gif
+  uploadDir: images001
+es:
+  addr: 192.168.80.3:9200
+  username: ""
+  password: ""
+  is_https: false
+  enable: false
+river:
+  enable: false
+  server_id: 1001
+  flavor: mysql
+  data_dir: ./var
+  source:
+  - schema: blogx
+    tables:
+    - article_models
+    - text_models
+  rule:
+  - schema: blogx
+    table: article_models
+    index: article_index
+    type: _doc
+    field:
+      tag_list: tag_list,list
+  - schema: blogx
+    table: text_models
+    index: text_index
+    type: _doc
+    field: {}
+  bulk_size: 128

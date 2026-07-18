@@ -1,0 +1,1 @@
+import{d as a,o as _,e as c,h as e,t as n,y as r}from"./index.b57f2f57.js";const d={class:"f_card_com"},l={class:"head"},i={class:"body scrollbar"},m=a({__name:"f_card",props:{title:{}},setup(s){const t=s;return(o,p)=>(_(),c("div",d,[e("div",l,n(t.title),1),e("div",i,[r(o.$slots,"default")])]))}});export{m as _};

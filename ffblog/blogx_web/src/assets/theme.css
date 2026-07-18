@@ -1,0 +1,12 @@
+:root {
+    --login_bg: rgba(255, 255, 255, 0.8);
+}
+
+[arco-theme="dark"]{
+    --login_bg: rgba(0, 0, 0, 0.8);
+    color-scheme: dark;
+
+    .md-editor-dark, .md-editor-modal-container[data-theme='dark']{
+        --md-bk-color: var(--color-bg-1);
+    }
+}

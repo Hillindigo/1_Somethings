@@ -1,0 +1,1 @@
+import{d as o,o as _,e as a,y as l,n as r,u as p}from"./index.b57f2f57.js";const f=o({__name:"f_title",props:{type:{}},setup(e){const t=e,{type:s=1}=t;return(n,c)=>(_(),a("div",{class:r(["f_title",`f_title_${p(s)}`])},[l(n.$slots,"default")],2))}});export{f as _};

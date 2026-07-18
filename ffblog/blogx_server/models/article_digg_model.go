@@ -1,0 +1,13 @@
+// models/article_digg_model.go
+package models
+
+import "time"
+
+type ArticleDiggModel struct {
+	Model
+	UserID       uint         `gorm:"uniqueIndex:idx_name" json:"userID"`
+	UserModel    UserModel    `gorm:"foreignKey:UserID" json:"-"`
+	ArticleID    uint         `gorm:"uniqueIndex:idx_name" json:"articleID"`
+	ArticleModel ArticleModel `gorm:"foreignKey:ArticleID" json:"-"`
+	CreatedAt    time.Time    `json:"createdAt"` // 点赞的时间
+}

@@ -1,0 +1,25 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a{
+  color: rgb(var(--arcoblue-6));
+  text-decoration: none;
+}
+
+svg.md-editor-icon.md-editor-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.arco-typography.arco-typography{
+  margin-bottom: 0;
+}
+
+div{
+  color: var(--color-text-1);
+}

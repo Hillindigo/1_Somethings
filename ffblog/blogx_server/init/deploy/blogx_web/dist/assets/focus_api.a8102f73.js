@@ -1,0 +1,1 @@
+import{v as s}from"./index.b57f2f57.js";function e(i){return i.isMe&&(i.userID=void 0),s.get("/api/focus/my_fans",{params:i})}function u(i){return i.isMe&&(i.userID=void 0),s.get("/api/focus/my_focus",{params:i})}function f(i){return s.post("/api/focus",i)}function t(i){return s.delete("/api/focus",{data:i})}export{t as a,u as b,e as c,f};

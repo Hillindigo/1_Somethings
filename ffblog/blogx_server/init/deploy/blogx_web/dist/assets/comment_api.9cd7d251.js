@@ -1,0 +1,1 @@
+import{v as e}from"./index.b57f2f57.js";function i(t){return e.get("/api/comment",{params:t})}function o(t){return e.delete("/api/comment/"+t.toString())}function m(t){return e.post("/api/comment",t)}function r(t){return e.get("/api/comment/tree/"+t.id.toString(),{params:t})}function c(t){return e.get("/api/comment/digg/"+t.toString())}export{i as a,o as b,m as c,c as d,r as e};

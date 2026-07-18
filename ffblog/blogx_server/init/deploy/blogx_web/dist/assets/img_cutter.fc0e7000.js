@@ -1,0 +1,1 @@
+import{I as a,i as n}from"./image_api.1314f2b6.js";import{d as r,o as c,c as s,u as i}from"./index.b57f2f57.js";import"./_plugin-vue_export-helper.cdc0426e.js";const f=r({__name:"img_cutter",setup(m){async function e(o){const t=await n(o.file);console.log(t)}return(o,t)=>(c(),s(i(a),{onCutDown:e,rate:"1:1"}))}});export{f as default};
