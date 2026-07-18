@@ -1,0 +1,19 @@
+2025-06-21T16:13:45.217+0800	[31mERROR[0m	HTTP请求失败	{"url": "www.baidu.com", "duration": "0s", "error": "Get \"www.baidu.com\": unsupported protocol scheme \"\"", "stack": {"Key":"stack","Type":15,"Integer":0,"String":"main.simpleHttpGet\n\tD:/2_GO/2_GoProject/3_zap_demo/main.go:59\nmain.main\n\tD:/2_GO/2_GoProject/3_zap_demo/main.go:19\nruntime.main\n\tD:/2_GO/1_go/src/runtime/proc.go:283","Interface":null}}
+2025-06-21T16:13:45.692+0800	[34mINFO[0m	HTTP请求成功	{"url": "http://www.sogo.com", "status": "200 OK", "status_code": 200, "duration": "462.6343ms", "content_length": 151}
+2025-06-21T16:14:44.705+0800	[31mERROR[0m	HTTP请求失败	{"url": "www.sogo.com", "duration": "529.4µs", "error": "Get \"www.sogo.com\": unsupported protocol scheme \"\"", "stack": {"Key":"stack","Type":15,"Integer":0,"String":"main.simpleHttpGet\n\tD:/2_GO/2_GoProject/3_zap_demo/main.go:59\nmain.main\n\tD:/2_GO/2_GoProject/3_zap_demo/main.go:19\nruntime.main\n\tD:/2_GO/1_go/src/runtime/proc.go:283","Interface":null}}
+2025-06-21T16:14:45.189+0800	[34mINFO[0m	HTTP请求成功	{"url": "http://www.sogo.com", "status": "200 OK", "status_code": 200, "duration": "473.2323ms", "content_length": 151}
+2025-06-21T16:17:00.500+0800	[34mINFO[0m	
+2025-06-21T16:17:00.512+0800	[34mINFO[0m	========== 开始请求 ==========
+2025-06-21T16:17:00.512+0800	[34mINFO[0m	请求URL	{"url": "www.sogo.com"}
+2025-06-21T16:17:00.512+0800	[31mERROR[0m	HTTP请求失败	{"url": "www.sogo.com", "duration": "0s", "error": "Get \"www.sogo.com\": unsupported protocol scheme \"\"", "stack": {"Key":"stack","Type":15,"Integer":0,"String":"main.simpleHttpGet\n\tD:/2_GO/2_GoProject/3_zap_demo/main.go:63\nmain.main\n\tD:/2_GO/2_GoProject/3_zap_demo/main.go:19\nruntime.main\n\tD:/2_GO/1_go/src/runtime/proc.go:283","Interface":null}}
+2025-06-21T16:17:00.512+0800	[34mINFO[0m	
+2025-06-21T16:17:00.512+0800	[34mINFO[0m	
+2025-06-21T16:17:00.512+0800	[34mINFO[0m	========== 开始请求 ==========
+2025-06-21T16:17:00.512+0800	[34mINFO[0m	请求URL	{"url": "http://www.sogo.com"}
+2025-06-21T16:17:00.768+0800	[34mINFO[0m	HTTP请求成功	{"url": "http://www.sogo.com", "status": "200 OK", "status_code": 200, "duration": "256.4502ms", "content_length": 151}
+2025-06-21T16:17:00.768+0800	[34mINFO[0m	========== 请求结束 ==========
+2025-06-21T16:17:00.768+0800	[34mINFO[0m	
+2025-06-22T14:38:46.309+0800	[34mINFO[0m	/	{"status": 404, "method": "GET", "path": "/", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0", "errors": "", "cost": "0s"}
+2025-06-22T14:38:46.599+0800	[34mINFO[0m	/favicon.ico	{"status": 404, "method": "GET", "path": "/favicon.ico", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0", "errors": "", "cost": "0s"}
+2025-06-22T14:38:50.381+0800	[34mINFO[0m	/a	{"status": 200, "method": "GET", "path": "/a", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0", "errors": "", "cost": "0s"}
+2025-06-22T20:21:18.590+0800	[34mINFO[0m	/a	{"status": 200, "method": "GET", "path": "/a", "query": "", "ip": "::1", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0", "errors": "", "cost": "0s"}
