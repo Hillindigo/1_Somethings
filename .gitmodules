@@ -1,6 +1,0 @@
-[submodule "1_goagent"]
-	path = 1_goagent
-	url = git@github.com:Hillindigo/1_goagent.git
-[submodule "1_GO"]
-	path = 1_GO
-	url = git@github.com:Hillindigo/1_GO.git
